@@ -1,0 +1,21 @@
+{
+    "name": "encservice",
+    "version": "1.0.0",
+    "description": "p2p service running on macosx",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1  node-windows , node-linux "
+    },
+    "keywords": [
+        "p2p",
+        "service",
+        "macosx"
+    ],
+    "author": "Majid H Khan",
+    "email": "majidhkahn@outlook.com",
+    "license": "ISC",
+    "dependencies": {
+        "node-mac": "^0.1.7",
+        "ps-node": "^0.1.6"
+    }
+}
