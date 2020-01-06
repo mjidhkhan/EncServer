@@ -50,7 +50,7 @@ svc.on('install', function() {
 
 // Just in case this file is run twice.
 svc.on('alreadyinstalled', function() {
-    if (svc.exists) {
+    if(svc.exists) {
         console.log('This service is already installed & running.');
     } else {
         console.log('Attempting to start it.');
