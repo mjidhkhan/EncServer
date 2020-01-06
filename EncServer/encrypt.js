@@ -22,8 +22,8 @@ const crypto = require('crypto')
 const secure_config = {
 
     // new encryption
-    salt_key: new Buffer('7pX&TD3Sw3qmCs*%N!@pmp$').toString('base64'),
-    salt_iv: new Buffer('R%Wx9kZ£&f').toString('base64'),
+    salt_key: new Buffer.from('7pX&TD3Sw3qmCs*%N!@pmp$').toString('base64'),
+    salt_iv: new Buffer.from('R%Wx9kZ£&f').toString('base64'),
 
 
 };
@@ -81,7 +81,7 @@ module.exports = {
      */
     Encode_Base_64: function(plainData) {
 
-        var buffer = new Buffer(plainData, 'utf8');
+        var buffer = new Buffer.from(plainData, 'utf8');
         var encoded = buffer.toString('base64');
 
         return encoded
@@ -97,7 +97,7 @@ module.exports = {
      ** ----------------------------------------------------
      */
     Decode_Base_64: function(encodedData) {
-        var buffer = new Buffer(encodedData, 'base64');
+        var buffer = new Buffer.from(encodedData, 'base64');
         var decoded = buffer.toString('utf8');
 
         return decoded
