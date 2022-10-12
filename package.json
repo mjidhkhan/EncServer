@@ -15,7 +15,7 @@
     "email": "majidhkahn@outlook.com",
     "license": "ISC",
     "dependencies": {
-        "node-mac": "^0.1.8",
+        "node-mac": "^1.0.1",
         "ps-node": "^0.1.6"
     }
 }
